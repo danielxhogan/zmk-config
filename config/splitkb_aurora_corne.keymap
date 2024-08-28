@@ -9,11 +9,6 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    keymap-sensors {
-      compatible = "zmk,keymap-sensors";
-      triggers-per-rotation = <100>;
-    };
-
     keymap {
       compatible = "zmk,keymap";
 
