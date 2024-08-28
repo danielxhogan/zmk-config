@@ -17,11 +17,11 @@
     keymap {
       compatible = "zmk,keymap";
 
-      default_layer {
-        &sensors {
-          triggers-per-rotation = <50>;
-        };
+      &sensors {
+        triggers-per-rotation = <50>;
+      };
 
+      default_layer {
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
 
         bindings = <
@@ -33,10 +33,6 @@
       };
 
       default_layer2 {
-        &sensors {
-          triggers-per-rotation = <50>;
-        };
-        
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp LEFT RIGHT>;
 
         bindings = <
