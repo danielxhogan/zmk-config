@@ -10,8 +10,8 @@
 
 / {
     keymap {
-      compatible = "zmk,keymap";
-
+      compatible = "zmk,keymap, keymap-sensors";
+      
       &sensors {
         triggers-per-rotation = <30>
       }
