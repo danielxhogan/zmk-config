@@ -11,15 +11,11 @@
 / {
     keymap-sensors {
       compatible = "zmk,keymap-sensors";
-      triggers-per-rotation = <50>;
+      triggers-per-rotation = <100>;
     };
 
     keymap {
       compatible = "zmk,keymap";
-
-      &keymap-sensors {
-        triggers-per-rotation = <50>;
-      };
 
       default_layer {
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
