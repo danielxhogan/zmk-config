@@ -17,7 +17,7 @@
     keymap {
       compatible = "zmk,keymap";
 
-      &sensors {
+      &keymap-sensors {
         triggers-per-rotation = <50>;
       };
 
