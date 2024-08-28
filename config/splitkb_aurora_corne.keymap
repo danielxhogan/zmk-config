@@ -9,13 +9,9 @@
 #include <dt-bindings/zmk/bt.h>
 
 / {
-    &sensors {
-      compatible = "zmk, keymap-sensors"
-      triggers-per-rotation = <30>
-    }
-
     keymap {
-      compatible = "zmk,keymap";
+      compatible = "zmk,keymap, keymap-sensors";
+      triggers-per-rotation = <30>
 
       default_layer {
         sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp DOWN UP>;
